@@ -1,16 +1,9 @@
 
 
-// var async = require('async');
 
+module.exports = function(app,cont){	
 
-module.exports = function(app,cont){
-	
-	// all routes will be here 
-	
-	app.get('/', cont.index);
-
-
-
-
+	app.get('/',cont.todo.index);
+	app.get('/hello',cont.great.something);
 
 }

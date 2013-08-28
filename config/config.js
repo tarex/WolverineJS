@@ -6,7 +6,7 @@
 
 module.exports={
   dev:{
-    db:'mongodb://localhost/todomvc',
+    db:'mongodb://localhost/module-test',
     root: rootPath,
   },
   pro:{}

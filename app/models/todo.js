@@ -1,13 +1,15 @@
 
+var mongoose = require('mongoose')   
+  ,Schema = mongoose.Schema;
 
-	var mongoose = require('mongoose');
-	// mongoose.connect('mongodb://localhost/todo');
+ var UserSchema = new Schema({
+     name:String,
+     email:String,
+     age:Number
+ });
 
+Users = mongoose.model('Users',UserSchema);
 
-	var Todo = new mongoose.Schema({
-	    user_id    : String,
-	    content    : String,
-	    updated_at : Date
-	});
-
-	mongoose.model('Todo', Todo );
+module.exports = {
+  Users: Users
+}

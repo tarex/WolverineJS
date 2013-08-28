@@ -10,6 +10,8 @@
     "mongodb":"*",
     "nunjucks":"*",
     "mongoose":"*",
+    "connect-mongo":"*",
+    "connect-flash":"*",
     "nodemon":"*"
 
   }
