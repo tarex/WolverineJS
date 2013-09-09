@@ -10,7 +10,8 @@ var express = require('express')
   , path = require('path')
   , http = require('http')
   , nunjucks = require('nunjucks')
-  , cont = require('./app/controllers');
+  , cont = require('./app/controllers')
+  , passport = require('passport');
 
 
  
@@ -37,6 +38,7 @@ mongoose.connect(config.db);
 
 
 mongoose.connection.on('open', function (ref) {
+
   console.log('connected');
   
 });
@@ -58,26 +60,26 @@ fs.readdirSync(models_path).forEach(function (file) {
 
   if (~file.indexOf('.js'))  
     require(models_path + '/' + file); 
+    console.log(file);
 })
 
 
 
-// var cont_path = './app/controllers';
 
-// fs.readdirSync(cont_path).forEach(function(file) {
-//   if (file != 'index.js') {
-//     var moduleName = file.substr(0, file.indexOf('.'));
-//     exports[moduleName] = require(cont_path +'/' + moduleName);
-//   // console.log(moduleName);
-//   }
-// });
+
+// passport config
+
+require('./config/passport')(passport, config);
+
+
+
 
 
 
 
 // express configuration
 
-require('./config/express')(app,config);
+require('./config/express')(app,config,passport);
 
 
 
@@ -90,7 +92,7 @@ env.express(app);
 
 
  // bootstrap routes
- require('./config/routes')(app,cont);
+ require('./config/routes')(app,cont,passport);
 
 
 

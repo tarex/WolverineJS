@@ -12,6 +12,8 @@
     "mongoose":"*",
     "connect-mongo":"*",
     "connect-flash":"*",
+    "passport":"*",
+    "passport-local":"*",
     "nodemon":"*"
 
   }

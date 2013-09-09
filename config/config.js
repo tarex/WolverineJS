@@ -6,7 +6,7 @@
 
 module.exports={
   dev:{
-    db:'mongodb://localhost/module-test',
+    db:'mongodb://localhost/wolv-blog',
     root: rootPath,
   },
   pro:{}
