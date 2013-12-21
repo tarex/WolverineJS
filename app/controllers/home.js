@@ -21,6 +21,14 @@
  }
 
 
+ exports.some = function(req,res){
+ 	//res.render('inde');
+ 	//console.log(working);
+ 	res.render('index.html');
+ }
+
+
+
  exports.faruk = function(req,res){
  	res.render('home.html',{data:'tumi janle na faruk'});
 

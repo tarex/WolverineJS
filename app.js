@@ -89,6 +89,10 @@ require('./config/express')(app,config,passport);
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('app/views'));
 env.express(app);
 
+// nunjucks.configure('app/views', {
+//     autoescape: true,
+//     express: app
+// });
 
 
  // bootstrap routes

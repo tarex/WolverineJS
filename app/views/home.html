@@ -3,13 +3,18 @@
 
 {% block content %}
     <h1>Home page</h1>
-    <pre>
-    	{{user}}
 
+    	
 
-    	{{data}}
+    	{% for post in posts %}
+    	  <h4> 	{{post.title}} </h4>
 
-    </pre>
+    	  <br>
+
+    	  {{post.body}}
+
+    	{% endfor %}
+
     
 
 

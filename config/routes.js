@@ -3,7 +3,9 @@
 
 module.exports = function(app,cont,passport){	
 
-	app.get('/',cont.signup.index);
+	//app.get('/',cont.signup.index);
+
+	app.get('/',cont.home.some);
 	app.get('/signup',cont.signup.index);
 	app.get('/hello',cont.great.something);
 	app.get('/home',cont.home.index);

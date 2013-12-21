@@ -2,37 +2,13 @@
 
 
 {% block content %}
-    <h1>All Users</h1>
+<center> <img src="/img/wolverine.jpg" style="width:800px;"> 
+    <h1>Index</h1>
+    <p class="important">
+      Welcome to the wolverine js 
 
-			<table class="table table-hover">
-			        <thead>
-			          <tr>
-			            <th>#</th>
-			            <th> Name</th>
-			            <th> Email</th>
-			            <th> Age</th>
-			          </tr>
-			        </thead>
-		
-
-			        <tbody>
-
-        {% for user in users %}
-
-
-			          <tr>
-			            <td></td>
-			            <td><a href="/users/{{ user.name }}">{{ user.name }}</a></td>
-			            <td>{{user.email }}</td>
-			            <td>{{user.age}} </td>
-			          </tr>
-
-
-        {% endfor %}
-
-			        </tbody>
-			</table>
-
+    </p>
+ </center>
 {% endblock %}
 
 
