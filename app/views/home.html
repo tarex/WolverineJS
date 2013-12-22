@@ -6,18 +6,39 @@
 
     	
 
+<input type="button" value="connect" id="simple-connect" class="connect">
+<div id="simple-content" class="textbox">
+
+
+</div>    	
+
+<form id="simple-form" style="display: block;"><input type="text" id="simple-text">
+	<input type="submit" value="Submit">
+</form>
+
+
     	{% for post in posts %}
-    	  <h4> 	{{post.title}} </h4>
+    	  <!-- <h4> 	{{post.title}} </h4> -->
 
     	  <br>
 
-    	  {{post.body}}
+    	  <!-- {{post.body}} -->
+
+    	  
 
     	{% endfor %}
 
-    
+    	<script type="text/javascript">
+
+
+
+    	</script>
+
+
 
 
 {% endblock %}
+
+
 
 

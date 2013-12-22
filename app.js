@@ -28,7 +28,7 @@ var config = require('./config/config')[env],
 
 var app = express();
 
-
+var server = http.createServer(app);
 
 
 // db connect
@@ -95,12 +95,59 @@ env.express(app);
 // });
 
 
+
+
+// socket io
+
+
+
+var io = require("socket.io").listen(server)
+
+io.sockets.on('connection', function (socket) {
+  socket.emit('news', { hello: 'world' });
+});
+
+// Send current time to all connected clients
+function sendTime() {
+    io.sockets.emit('time', { time: new Date().toJSON() });
+}
+
+// Send current time every 10 secs
+setInterval(sendTime, 10000);
+
+// Emit welcome message on connection
+io.sockets.on('connection', function(socket) {
+    socket.emit('welcome', { message: 'Welcome!' });
+
+    socket.on('i am client', console.log);
+
+    
+    socket.on('message', function(data) {
+      socket.broadcast.send(data);
+    });
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  // bootstrap routes
  require('./config/routes')(app,cont,passport);
 
 
 
-http.createServer(app).listen(app.get('port'), function(){
+server.listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
 

@@ -14,7 +14,8 @@
     "connect-flash":"*",
     "passport":"*",
     "passport-local":"*",
-    "nodemon":"*"
+    "nodemon":"*",
+    "socket.io":"*"
 
   }
 }
