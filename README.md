@@ -1,4 +1,4 @@
 WolverineJS
 ===========
 
-Experimental MVC framework based on Node JS
+Simple MVC framework based on Node JS
