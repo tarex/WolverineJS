@@ -1,11 +1,11 @@
 {
   "name": "wolverinejs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple node js framework ",
   "main": "index.js",
   "scripts": {
-    
-  },  
+
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/tarex/WolverineJS.git"
