@@ -4,7 +4,7 @@
   "description": "simple node js framework ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -b"
+    
   },
   "keywords": [
     "nodeJS",
