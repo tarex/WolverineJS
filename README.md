@@ -62,8 +62,11 @@ into the `app.js` file you need to include this , it will handle rest of the thi
 
 It will boostrap your application and all models , controller , routes will be included .
 
+    check `demo` folder .
 
-##Routes
+
+Routes
+===========
 
 you can set your routes into `app/config/routes.js` , the format will be like this
 
@@ -84,13 +87,15 @@ you can set your routes into `app/config/routes.js` , the format will be like th
     }
 
 
-##Views
+Views
+===========
 
 By default it uses `Nunjucks` [ http://nunjucks.jlongster.com/ ] . Your view files will be loaded from `app/views` folder . Its possible to extend template , it has many option , you can read form here http://mozilla.github.io/nunjucks/templating.html
 
 
 
-#Controllers
+Controllers
+===========
 
 Controller will be into `app/controllers` directory and it follows
 
@@ -102,22 +107,27 @@ Controller will be into `app/controllers` directory and it follows
     }
 
 
-#Models
+Models
+===========
+
  models will be into `app/models` folder
 
 
 
 
 
-#Todo
+Todo
+===========
 
 - ORM support for major database engines .
 - Configuration override
 - App environment settings
 - Error & Event Handling
+- Passport
 - SockJS
 - Test
 
-# Note :
+Note :
+===========
 
 Its a very simple framework that follows MVC patterns , very light weighted , still in heavy development  
