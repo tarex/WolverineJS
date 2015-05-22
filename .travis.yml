@@ -19,4 +19,5 @@ notifications:
 branches:
   only:
     - master
+    - dev 
 
