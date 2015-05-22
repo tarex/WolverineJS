@@ -119,4 +119,5 @@ Controller will be into `app/controllers` directory and it follows
 - Test
 
 # Note :
-    Its a very simple framework that follows MVC patterns , very light weighted , still in heavy development  
+
+Its a very simple framework that follows MVC patterns , very light weighted , still in heavy development  
