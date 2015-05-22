@@ -62,7 +62,7 @@ into the `app.js` file you need to include this , it will handle rest of the thi
 
 It will boostrap your application and all models , controller , routes will be included .
 
-    check `demo` folder .
+check `demo` folder , write `node app.js` to run this form demo folder . 
 
 
 Routes
