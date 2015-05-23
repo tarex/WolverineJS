@@ -1,6 +1,6 @@
 {
   "name": "wolverinejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "simple node js framework ",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "framework",
     "MVC",
     "WolverineJS",
-    "express",
+    "Express",
     "nunjucks"
   ],
   "author": "tarex",
