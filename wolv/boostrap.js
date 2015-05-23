@@ -1,24 +1,38 @@
-var express = require('express')  
+var express = require('express')
 	, app = express()
 	;
 
 
 
 
+
+/*
+|--------------------------------------------------------------------------
+|  MVC load 
+|--------------------------------------------------------------------------
+*/
+
 var controller = require('./controllers');
+				 require('./models')();
 
-require('./models')();
-
-require('./config/routes')(app , express , controller);
-require('./config/index')(app);
-require('./config/view')(app,express);
-require('./config/http')(app);
+require('./routes')( app , express , controller);
 
 
+/*
+|--------------------------------------------------------------------------
+|  Configuration override 
+|--------------------------------------------------------------------------
+*/
+
+var env = require('./config/load');
 
 
+/*
+|--------------------------------------------------------------------------
+|  From load , basic dependency
+|--------------------------------------------------------------------------
+*/
 
-
-
-
-
+require('./load/index')(app);
+require('./load/view')(app,express);
+require('./load/http')(app);
