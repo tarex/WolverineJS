@@ -13,11 +13,24 @@ Simple MVC framework based on Node JS
 
 installation
 ===========
+you can install with its generator.
 
-	npm install wolverinejs --save
+	npm install wolv -g
+
+then , it will do the rest of the thing
+
+	wolv yourAppName
+
+or
+
+	wolv
+
+thts it . it will generate the primary boilerplate for you .
 
 
-It uses ExpressJS and Nunjucks templating engine . You need to follow this folder structure to make it work .
+
+
+It uses ExpressJS and Nunjucks templating engine . This is the basic folder structure .
 
 
 

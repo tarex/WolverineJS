@@ -1,6 +1,6 @@
 {
   "name": "wolverinejs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "simple node js framework ",
   "main": "index.js",
   "scripts": {
