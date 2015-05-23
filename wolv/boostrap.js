@@ -24,7 +24,7 @@ require('./routes')( app , express , controller);
 |--------------------------------------------------------------------------
 */
 
-var env = require('./config/load');
+//var env = require('./config/load');
 
 
 /*
